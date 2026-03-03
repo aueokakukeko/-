@@ -1,1 +1,93 @@
-濱口
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamaguchi | Profile</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #111);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 50px;
+        border-radius: 20px;
+        text-align: center;
+        width: 350px;
+        box-shadow: 0 0 40px rgba(0, 255, 200, 0.2);
+        animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, #00ffd5, #00aaff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+    }
+
+    p {
+        opacity: 0.8;
+        margin-bottom: 25px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        border-radius: 30px;
+        border: none;
+        background: linear-gradient(90deg, #00ffd5, #00aaff);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #00ffd5;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>濱口</h1>
+    <p>Welcome to my profile.</p>
+    <p>挑戦を楽しむ人。</p>
+    <button class="btn" onclick="alert('Thanks for visiting!')">
+        Click Me
+    </button>
+</div>
+
+</body>
+</html>
